@@ -1,28 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
 <head>
-  <link href="http://vjs.zencdn.net/4.2.2/video-js.css" rel="stylesheet" data-semver="4.2.2" data-require="video.js@*" />
-  <script src="http://vjs.zencdn.net/4.2.2/video.js" data-semver="4.2.2" data-require="video.js@*"></script>
-  <script data-require="jquery@1.9.1" data-semver="1.9.1" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link href="http://belelros.github.io/videojs-playLists/css/main.css" rel="stylesheet">
+    <link href="http://belelros.github.io/videojs-playLists/css/normalize.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <link href="//vjs.zencdn.net/4.9/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.9/video.js"></script>
+    <script src="https://rawgithub.com/Belelros/videojs-playLists/master/lib/videojs-playlists.js" data-cover></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     <script src="main.js"></script>
 
-
-  <meta charset="utf-8" />
-  <title>videojs-playlists demo</title>
 </head>
+    <div class="video-holder centered">
 
-<body>
-  <script src="videojs-playList.js"></script>
-  <video width="640" height="264" data-setup="" controls="" class="video-js vjs-default-skin" id="video"></video>
-  <h1></h1>
-  <button data-action="prev" type="button">Previous</button>
-  <button data-action="next" type="button">Next</button>
-  <script src="script.js"></script>
+        <video id="video" class="video-js vjs-default-skin"
+               controls preload="auto" width="640" height="640"
+               data-setup=''
+               poster="">
+        </video>
 
-  <p>
-  The public repository can be found <a href="https://github.com/Belelros/videojs-playLists">here</a>.
-  </p>
+        <div class="playlist-components">
+<script>
+     var videos = [
+        {
+          src : [
+            'http://192.168.1.165/streamtest1.m3u8'
+          ],
+          poster : 'images/bbc_news.png',
+          title : 'BBC WORLD NEWS'
+        },
+        {
+          src : [
+            'http://192.168.1.165/streamtest2.m3u8'
+          ],
+          poster : 'images/al_jazeera_english.png',
+          title : 'AL JAZEERA'
+        },
+        {
+          src : [
+            'http://192.168.1.165/streamtest3.m3u8'
+          ],
+          poster : 'images/viasat_explore.png',
+          title : 'Viasat Explore'
+        }
+      ];
+</script>
+
+            <div class="playlist">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+
 </body>
-
 </html>
