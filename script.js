@@ -1,9 +1,7 @@
 var videos = [
         {
           src : [
-            'http://stream.flowplayer.org/bauhaus/624x260.webm',
-            'http://stream.flowplayer.org/bauhaus/624x260.mp4',
-            'http://stream.flowplayer.org/bauhaus/624x260.ogv'
+            'https://feed.play.mv/live/10005200/isU48qPZqV/master.m3u8'
           ],
           poster : 'http://flowplayer.org/media/img/demos/minimalist.jpg',
           title : 'Video 1'
